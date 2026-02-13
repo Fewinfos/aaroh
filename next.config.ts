@@ -1,7 +1,9 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+  output: "export",
   images: {
+    unoptimized: true,
     remotePatterns: [
       {
         protocol: "https",
@@ -9,8 +11,6 @@ const nextConfig: NextConfig = {
       },
     ],
   },
-  // Fix the multiple lockfiles warning
-  outputFileTracingRoot: "c:\\Users\\Naveenraj.T\\Desktop\\multiverse",
 };
 
 export default nextConfig;
